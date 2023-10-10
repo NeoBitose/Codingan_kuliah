@@ -5,17 +5,17 @@ kalimat = "Lorem ipsum dolor >sit amet consec'tetur adipi\sicing elit. Error, de
 kata = ""
 listkata = []
 
-def search_string(data):
-    if data >= len(cari):
+def search_string(indeks):
+    if indeks >= len(cari):
         print("Program pencarian selesai\n")
     else:
         for i in range(len(listkata)):
-            if cari[data] == listkata[i]:
-                print(f"Pencarian kata {cari[data]} ditemukan di urutan {i+1} pada kalimat")
+            if cari[indeks] == listkata[i]:
+                print(f"Pencarian kata {cari[indeks]} ditemukan di urutan {i+1} pada kalimat")
                 break
-            elif i == len(listkata) - 1 and cari[data] != listkata[i]:
-                print(f"Pencarian kata {cari[data]} tidak ditemukan pada kalimat")      
-        search_string(data+1)
+            elif i == len(listkata) - 1 and cari[indeks] != listkata[i]:
+                print(f"Pencarian kata {cari[indeks]} tidak ditemukan pada kalimat")      
+        search_string(indeks+1)
             
 
 for i in range(len(kalimat)):

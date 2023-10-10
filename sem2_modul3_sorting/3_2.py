@@ -30,16 +30,16 @@ while ulang < len(df) :
     
 # print(tabulate(df,headers=tabel,tablefmt='fancy_grid'))
 
-for ulang in range(len(df)-1) :
+# for ulang in range(len(df)-1) :
     
-    tmp_data = df[ulang+1]
-    tmp_nilai = df[ulang+1][3]
-    tmp_nama = df[ulang+1][2]
+#     tmp_data = df[ulang+1]
+#     tmp_nilai = df[ulang+1][3]
+#     tmp_nama = df[ulang+1][2]
     
-    while ulang >= 0 and tmp_nilai == df[ulang][3] and tmp_nama < df[ulang][2] :
-        df[ulang+1] = df[ulang]
-        ulang -= 1
-    df[ulang+1] = tmp_data
+#     while ulang >= 0 and tmp_nilai == df[ulang][3] and tmp_nama < df[ulang][2] :
+#         df[ulang+1] = df[ulang]
+#         ulang -= 1
+#     df[ulang+1] = tmp_data
     
 print("\nData Nilai Mahasiswa Setelah Diurutkan")
 print("=================================")
