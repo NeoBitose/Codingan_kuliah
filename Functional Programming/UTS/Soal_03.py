@@ -7,5 +7,5 @@ def print_genap(arry, a=0, genap=[]) :
   else :
     return genap
 
-array_angka = [1,12,3,14,5,16,7,18,9,10]
+array_angka = [1,2,3,4,5,6,7,8,9,10]
 print(print_genap(array_angka))

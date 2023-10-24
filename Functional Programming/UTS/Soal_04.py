@@ -8,3 +8,4 @@ def reverse_list(arry, hasil = []):
 
 array_huruf = ['abc', 'def', 'efg']
 print(reverse_list(array_huruf))
+
