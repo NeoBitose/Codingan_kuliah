@@ -17,6 +17,7 @@ def perkalian(fungsi):
 print(perkalian(pertambahan))
 
 # Sebagai return
+
 def fungsi_tambah(a):
   def hasil_tambah(b):
     return a + b
@@ -25,7 +26,6 @@ def fungsi_tambah(a):
 variabel = fungsi_tambah(5)
 print(variabel(5))
 
-# Sebagai list dan tabel
 
 
 
