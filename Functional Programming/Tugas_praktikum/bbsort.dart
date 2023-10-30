@@ -20,7 +20,7 @@ List<int> bubbleRekursive(List<int> listAngka, int b){
   }
   listAngka = cekNilai(listAngka, 0);
   return bubbleRekursive(listAngka, b-1);
-}
+} 
 
 List<int> bubble(listAngka){
   if (listAngka.length <= 1){
