@@ -33,3 +33,5 @@ while True:
   else:
     new_akun.trial += 1
     print(f"trial : {new_akun.trial}")
+
+deta

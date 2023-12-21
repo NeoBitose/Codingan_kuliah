@@ -2,10 +2,10 @@ data_kesehatan = []
 
 def create():
   nama_pasien = input("Masukkan nama pasien: ")
-  detak_jantung = int(input("Masukkan detak jantung: "))
-  kadar_darah = int(input("Masukkan kadar darah: "))
-  kadar_gula = int(input("Masukkan kadar gula: "))
-  tekanan_darah = int(input("Masukkan tekanan darah: "))
+  detak_jantung = int(input("Masukkan detak jantung (bpm): "))
+  kadar_darah = int(input("Masukkan kadar darah (g/dL): "))
+  kadar_gula = int(input("Masukkan kadar gula (mg/dL): "))
+  tekanan_darah = int(input("Masukkan tekanan darah (mmHg): "))
   data = {
     'nama_pasien': nama_pasien,
     'detak_jantung': detak_jantung,
