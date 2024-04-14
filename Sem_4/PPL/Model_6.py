@@ -2,6 +2,8 @@
 # Fungsi untuk memprediksi penyakit berdasarkan gejala
 import numpy as np
 import pandas as pd
+import keras
+from keras import ops
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras.preprocessing.text import Tokenizer
@@ -10,6 +12,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout
 from tensorflow.keras.activations import relu
 from tensorflow.keras import regularizers
+
 
 # Dataset
 data = [
@@ -125,7 +128,7 @@ print(f'Test Loss: {loss}, Test Accuracy: {accuracy}')
 
 # Langkah 11: Penyimpanan Model
 model.save('D:\codingan\python\github_connect\Sem_4\PPL\plantS_disease_model.h5')
-model = load_model('D:\codingan\python\github_connect\Sem_4\PPL\plantS_disease_model.h5')
+model = keras.models.load_model('D:\codingan\python\github_connect\Sem_4\PPL\plantS_disease_model.h5')
 
 def predict_disease_with_probability(symptoms):
     # Tokenisasi gejala
